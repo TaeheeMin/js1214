@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>변수 생명주기</title>
+		<script>
+			// js 변수 선언 방법 var, let
+			// let {블록} 생명주기 
+			// var 함수 생명주기
+			function test() {
+				{
+					var x = 10;
+					let y = 20;
+				}
+				console.log('x : ' + x);
+				// console.log('y : ' + y);
+			}
+			
+			test();
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

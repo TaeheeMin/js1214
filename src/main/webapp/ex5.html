@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자료형</title>
+		<script>
+			let a = 10;
+			console.log('정수 타입 : ',typeof(a));
+			let a2 = 3.14;
+			console.log('실수 타입 : ',typeof(a2));
+			// number
+			// 실수/정수 구분 없음
+			
+			let b = false;
+			console.log('T/F 타입 : ',typeof(b));
+			// boolean
+			let c = 7>5;
+			if (c) {
+				console.log('7은 5보다 크다');
+			}
+			
+			let d = 'word';
+			console.log('문자 타입 : ',typeof(d));
+			// string
+			
+			let e = null;
+			console.log('널 타입 : ',typeof(e));
+			// object
+			// null도 타입임
+			
+			let f;
+			console.log('값없는 : ',typeof(f));
+			// undefined
+			// 값이 없는 타입
+			
+			let g = [1,2,3];
+			console.log('배열 타입 : ',typeof(g));
+			// object 베열도 오브젝트
+			console.log(g[1]);
+			
+			let h = {name:'태희', age:19};
+			console.log('객체 타입 : ',typeof(h));
+			// object 객체도 오브젝트
+			// 자바는 객체기반 -> 프로토타입(객체)틀(클래스)이 있어야 생성가능
+			// js는 프로토타입이 필요없음
+			console.log(h.name);
+			
+			let i = function() {
+				alert('test...');
+				return true;
+			}
+			console.log('함수 타입 : ',typeof(i));
+			// function
+			// 변수안에 함수가 대입
+			// 선언 이후로부터 사용가능, 위치 제약이 있음
+			i();
+			console.log(i);
+			// 함수 코드가 출력
+			// 일반 함수선언 : 위치가 어디에 있던 항상 위에서 실행, 위치 제약이 없다.
+			
+			let j = i;
+			console.log('함수 타입 : ',typeof(j));
+			console.log(j);
+			j();
+			// j도 함수코드 나옴, j도 함수
+			
+			let k = i();
+			console.log('k의 결과 : ', k, typeof(k));
+			// i 함수의 결과가 k에 대입 true를 반환하기 때문에 k는 boolean타입
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
